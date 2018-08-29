@@ -97,7 +97,7 @@
         },
         {
             "type": "Microsoft.Network/publicIPAddresses",
-            "name": "[parameters('publicIPAddressName')]",
+            "name": "[variables('publicIPAddressName')]",
             "apiVersion": "2018-02-01",
             "location": "[resourceGroup().location]",
             "properties": {
