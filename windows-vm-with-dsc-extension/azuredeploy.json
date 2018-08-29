@@ -25,12 +25,10 @@
             ]
         },
         "modulesUrl": {
-          "type": "string",
-          "defaultValue": "https://"
+          "type": "string"
         },
         "configurationFunction": {
-          "type": "string",
-          "defaultValue": ".ps1\\"
+          "type": "string"
         }
     },
     "variables": {
