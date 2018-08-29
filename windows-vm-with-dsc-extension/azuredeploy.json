@@ -24,10 +24,6 @@
               "2016-Datacenter"
             ]
         },
-        "extensionVersion": {
-          "type": "string",
-          "defaultValue": "2."
-        },
         "modulesUrl": {
           "type": "string",
           "defaultValue": "https://"
@@ -212,7 +208,7 @@
             "properties": {
                 "publisher": "Microsoft.Powershell",
                 "type": "DSC",
-                "typeHandlerVersion": "[parameters('extensionVersion')]",
+                "typeHandlerVersion": "2.75",
                 "autoUpgradeMinorVersion": true,
                 "settings": {
                     "ModulesUrl": "[parameters('modulesUrl')]",
