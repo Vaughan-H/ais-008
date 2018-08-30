@@ -24,10 +24,13 @@
               "2016-Datacenter"
             ]
         },
-        "modulesUrl": {
+        "dscConfigurationUrl": {
           "type": "string"
         },
-        "configurationFunction": {
+        "dscConfigurationScript": {
+          "type": "string"
+        },
+        "dscConfigurationFunction": {
           "type": "string"
         }
     },
@@ -209,9 +212,12 @@
                 "typeHandlerVersion": "2.75",
                 "autoUpgradeMinorVersion": true,
                 "settings": {
-                    "ModulesUrl": "[parameters('modulesUrl')]",
-                    "ConfigurationFunction": "[parameters('configurationFunction')]",
-                    "Properties": ""
+                    "wmfVersion": "latest",
+                    "configuration": {
+                        "url": "[parameters('dscConfigurationUrl')]",
+                        "script": "[parameters('dscConfigurationScript')]",
+                        "function": "[parameters('dscConfigurationFunction')]"
+                    }
                 },
                 "protectedSettings": {}
             },
